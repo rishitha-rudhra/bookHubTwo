@@ -1,0 +1,41 @@
+.hm-body-container {
+  background-color: #f5f7fa;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hm-heading {
+  font-family: Roboto;
+  color: #1e293b;
+  font-size: 40px;
+  font-weight: 500;
+  margin-block-start: 0px;
+}
+
+.hm-description {
+  width: 80%;
+  color: #475569;
+  margin-block-start: 0px;
+  margin-bottom: 20px;
+}
+.top-rated-books {
+  background-color: #ffffff;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.top-rated-heading {
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 600;
+  margin-block-start: 0px;
+}
+
+.find-books-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
