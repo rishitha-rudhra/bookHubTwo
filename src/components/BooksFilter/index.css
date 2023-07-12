@@ -1,0 +1,28 @@
+.books-type-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .books-type-list {
+    display: none;
+  }
+}
+
+.books-type-item {
+  border: 1px solid #0284c7;
+  color: #0284c7;
+  background-color: #ffffff;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.active-books-type {
+  background-color: #0284c7;
+  border: 1px solid #0284c7;
+  color: #ffffff;
+}

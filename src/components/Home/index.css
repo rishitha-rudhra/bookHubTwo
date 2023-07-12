@@ -25,6 +25,7 @@
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
 }
 .top-rated-heading {
   color: #1e293b;
@@ -37,5 +38,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
   align-items: center;
 }

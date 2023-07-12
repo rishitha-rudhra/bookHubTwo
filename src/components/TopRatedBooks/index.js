@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Slider from 'react-slick'
 
 /* Add css to your project */
@@ -14,7 +15,7 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -28,7 +29,7 @@ const settings = {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
@@ -44,11 +45,13 @@ class TopRatedBooks extends Component {
         {topRatedBooksList.map(eachBook => {
           const {id, title, authorName, coverPic} = eachBook
           return (
-            <div className="slick-item" key={id}>
-              <img className="book-image" src={coverPic} alt={title} />
-              <p className="book-title">{title}</p>
-              <p className="book-author">{authorName}</p>
-            </div>
+            <Link to={`/books/${id}`} className="link-element">
+              <div className="slick-item" key={id}>
+                <img className="book-image" src={coverPic} alt={title} />
+                <p className="book-title">{title}</p>
+                <p className="book-author">{authorName}</p>
+              </div>
+            </Link>
           )
         })}
       </Slider>

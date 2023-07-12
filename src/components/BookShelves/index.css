@@ -1,0 +1,121 @@
+.shelf-container {
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+}
+.shelf-body-section {
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  min-height: 90vh;
+}
+
+@media screen and (min-width: 768px) {
+  .shelf-body-section {
+    padding: 30px 20px 20px 100px;
+  }
+}
+
+.search-bar {
+  border: 1px solid #cbd5e1;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 31px;
+  border-radius: 5px;
+}
+
+.search-input-ele {
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.search-icon-btn {
+  border-style: none;
+  width: 60px;
+  background-color: #cbd5e1;
+  color: #94a3b8;
+  font-size: 23px;
+  height: 30px;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.books-type-text {
+  font-size: 22px;
+  color: #334155;
+  font-weight: 600;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.books-shelf-section {
+  width: 100%;
+}
+
+.search-and-books-type-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .search-and-books-type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 15px;
+  }
+}
+
+.lg-books-filter {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .lg-books-filter {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ffffff;
+    padding-left: 20px;
+  }
+}
+
+.filter-btn {
+  background-color: transparent;
+  border-style: none;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.active-filter-item {
+  color: #0284c7;
+}
+
+.filters-heading {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.no-books-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.no-books-img {
+  width: 200px;
+}

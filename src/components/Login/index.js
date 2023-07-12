@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import './index.css'
 import Cookies from 'js-cookie'
 
@@ -45,6 +46,10 @@ class Login extends Component {
   }
 
   renderLoginForm = () => {
+    const jwtToken = Cookies.get('jwtToken')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     const {errorMsg, username, password} = this.state
 
     return (
@@ -53,7 +58,7 @@ class Login extends Component {
           <div className="logo-container">
             <img
               src="https://res.cloudinary.com/dq35rpgor/image/upload/v1689070685/samples/Group_7730_n4k5ti.svg"
-              alt="website logo"
+              alt="website login"
               className="website-logo"
             />
             <p className="logo-text">ook Hob</p>
@@ -93,7 +98,7 @@ class Login extends Component {
     <div className="bg-container">
       <img
         src="https://res.cloudinary.com/dq35rpgor/image/upload/v1689070685/samples/Rectangle_1467_lmzxw3.png"
-        alt="login"
+        alt="login website logo"
         className="lg-login-img"
       />
       {this.renderLoginForm()}
@@ -104,7 +109,10 @@ class Login extends Component {
     return (
       <>
         <div className="sm-bg-container">
-          <img src="https://res.cloudinary.com/dq35rpgor/image/upload/v1689070552/samples/Ellipse_99_1_nxb9ti.png" />
+          <img
+            src="https://res.cloudinary.com/dq35rpgor/image/upload/v1689070552/samples/Ellipse_99_1_nxb9ti.png"
+            alt="login website logo"
+          />
           {this.renderLoginForm()}
         </div>
         {this.renderLgView()}

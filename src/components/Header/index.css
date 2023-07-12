@@ -7,6 +7,10 @@
   justify-content: flex-start;
   align-items: center;
 }
+.link-ele {
+  text-decoration: none;
+  margin-right: auto;
+}
 .header-logo-section {
   margin-right: auto;
 }
@@ -27,4 +31,12 @@
   border-style: none;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
+}
+
+.link-element {
+  text-decoration: none;
+}
+
+.active-tab {
+  color: #0284c7;
 }
